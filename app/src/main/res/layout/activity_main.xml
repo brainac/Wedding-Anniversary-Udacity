@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/wedding" />
+
+    <TextView
+        android:id="@+id/Greeting_Text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:padding="24dp"
+        android:text="Happy Wedding Anniversary"
+        android:textColor="#684a29"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/Message_Text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Greeting_Text_View"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:padding="32dp"
+        android:text="True love never dies, it only grows stronger and truer with the passing of time."
+        android:textSize="20sp" />
+
+</RelativeLayout>
